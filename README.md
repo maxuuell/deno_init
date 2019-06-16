@@ -1,10 +1,26 @@
 # deno_init
 
-The initialization script to set up a deno project 🦕
+The executable to set up a deno project 🦕
+
+------
+
+## Installation
+
+This script is meant to be installed with the new `deno_installer`.
+
+Note: the installer is subject to change.  This repo will grow with any updates to deno.
 
 To fetch and install the executable:
-`deno_installer deno_init url/mod.ts --allow-net --allow-read --allow-write`
+
+```bash
+deno_installer deno_init https://raw.githubusercontent.com/maxuuell/deno_init/${b}/mod.ts --allow-net --allow-read --allow-write
+```
 
 Note: this script requires network access to fetch a necessary dependency, and read/write access to set up the directory.
 
-Once the executable is installed, run `deno_init <YOUR_DIRECTORY>` to set up your directory.
+Once the executable is installed, run 
+
+```bash
+deno_init your_directory
+```
+
