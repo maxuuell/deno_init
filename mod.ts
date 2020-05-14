@@ -1,8 +1,8 @@
 #!/usr/bin/env deno
 
-const { writeFile, mkdirSync, args, exit } = Deno;
-import { red, bold, green } from "https://deno.land/std@v0.8.0/colors/mod.ts";
+import { red, bold, green } from "./deps.ts";
 
+const { writeFile, mkdirSync, args, exit } = Deno;
 const projectName = args[1];
 
 if (!projectName) {
